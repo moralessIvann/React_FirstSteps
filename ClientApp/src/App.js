@@ -1,22 +1,33 @@
-import "bootstrap/dist/css/bootstrap.min.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Card from './components/Card'
+import Counter from './components/Counter'
+import Employee from './components/Employee'
 
-const App = () => {
+
+export default function App() {
     return (
+        
         <div className="container-fluid">
+            <h1>Hello World</h1>
+            <Counter />
+            
+                {/*this was used for props example*/}
             <div className="row justify-content-sm-center">
                 <div className="col-sm-4">
-                    <div className="card text-center bg-dark mt-5">
-                        <div className="card-body">
-                            <h1 className="card-title text-info">Welcome to this site</h1>
-                            <p className="card-title text-light">First steps with REACT JS</p>
-                            <a href="#" className="btn btn-danger">SUBSCRIBE</a>
-                        </div>
-                    </div>
+                    <Card 
+                        title="Card #1" 
+                        bodyText="This is the first card" 
+                        btnText="Subscribe x1">
+                        <br/>
+                        <b className="text-light">5 Likes</b>
+                        </Card>
+
+                    <Card title="Card #2" bodyText="This is the second card" btnText="Subscribe x2"/>
+                    <Card title="Card #3" bodyText="This is the third card" btnText="Subscribe x3" />  
+                    <br />
+                    <Employee/>
                 </div>
             </div>
-            <h1>Hello World</h1>
         </div>
     )
 }
-
-export default App;

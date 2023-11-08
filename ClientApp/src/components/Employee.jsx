@@ -11,7 +11,7 @@ const Employee = () => {
     const [employee, setEmployee] = useState(employeeModel)
 
     return (
-        <div className="border border-dark py-2 px-2">
+        <div className="text-center border border-dark py-2 px-2">
             <p>Name: {employee.name}</p>
             <p>Mail: {employee.mail}</p>
 

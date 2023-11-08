@@ -11,21 +11,19 @@ export default function App() {
             <h1>Hello World</h1>
             <Counter />
             
-                {/*this was used for props example*/}
             <div className="row justify-content-sm-center">
                 <div className="col-sm-4">
-                    <Card 
-                        title="Card #1" 
-                        bodyText="This is the first card" 
-                        btnText="Subscribe x1">
+
+                    <Card title="Card #1" bodyText="This is the first card" btnText="Subscribe x1">
                         <br/>
                         <b className="text-light">5 Likes</b>
-                        </Card>
+                    </Card>
 
                     <Card title="Card #2" bodyText="This is the second card" btnText="Subscribe x2"/>
                     <Card title="Card #3" bodyText="This is the third card" btnText="Subscribe x3" />  
                     <br />
-                    <Employee/>
+                    <Employee />
+
                 </div>
             </div>
         </div>
